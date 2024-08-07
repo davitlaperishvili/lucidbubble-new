@@ -1,6 +1,3 @@
-<?php 
-    //Template Name: Page Builder
-?>
 <?php get_header(); ?>
 
 <main class="home_page">

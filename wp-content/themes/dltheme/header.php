@@ -10,7 +10,7 @@
     $page_direction = "rtl";
   }
 ?>
-<html lang="en" dir="<?php echo $page_direction ?>">
+<html lang="en" class="dl_theme" dir="<?php echo $page_direction ?>">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
