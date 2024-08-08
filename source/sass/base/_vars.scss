@@ -3,7 +3,7 @@ $cwhite: #fff;
 $cblack: #000;
 $cdark: #1F1F1F;
 $cbase: rgba(#1F1F1F, 0.7);
-$cmain: #777;
+$cmain: #1F1F1F;
 $cread: rgba(#000000, 0.3);
 $cgray: #ccc;
 $cline: #eee;
@@ -51,3 +51,14 @@ $ffmain: "Poppins", sans-serif;
 $ffremix: "remixicon";
 $ffawesome: "Font Awesome 5 Pro";
 /* Font family */
+
+// media query 
+
+$w1680 : "(max-width: 1680px)";
+$w1440 : "(max-width: 1440px)";
+$w1366 : "(max-width: 1366px)";
+$w1280 : "(max-width: 1280px)";
+$w1024 : "(max-width: 1024px)";
+$w768 : "(max-width: 768px)";
+$w420 : "(max-width: 420px)";
+$w360 : "(max-width: 360px)";

@@ -10,13 +10,10 @@
     
     <section class="hero" id="content<?php echo $rowIndex ?>">
       <div class="container">
-        <div class="hero_content">
-          <figure>
-              <img src="<?php echo $hero_image['url'] ?>" alt="<?php echo $hero_image['alt'] ?>">
-          </figure>
-          <div class="hero_left">
+        <div class="section_wrap">
+          <div class="hero_content">
             <div class="top_title"><?php echo $hero_top_title ?></div>
-            <h1 class="page_title"><?php echo $heroTitle ?></h1>
+            <h1 class="page_title"><?php echo $hero_title ?></h1>
             <div class="hero_subtitle"><?php echo $hero_subtitle ?></div>
             <div class="hero_buttons">
               <?php 
@@ -31,6 +28,9 @@
               ?>
             </div>
           </div>
+          <figure>
+              <img src="<?php echo $hero_image['url'] ?>" alt="<?php echo $hero_image['alt'] ?>">
+          </figure>
         </div>
       </div>
     </section>

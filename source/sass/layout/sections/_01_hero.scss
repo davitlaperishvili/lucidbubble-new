@@ -1,0 +1,48 @@
+.dl_theme{
+  section.hero{
+    @extend .section_margin;
+    .section_wrap{
+      display: grid;
+      grid-gap: 100px;
+      align-items: center;
+      grid-template-columns: 1.2fr 1fr;
+      @media #{$w1024}{
+        grid-gap: 40px;
+        grid-template-columns: 1fr;
+      }
+      figure{
+        img{
+
+        }
+      }
+      .hero_content{
+        .top_title{
+          margin-bottom: 10px;
+          font-size: 16px;
+          font-weight: 300;
+          color: $cmain;
+        }
+        .page_title{
+          margin-bottom: 20px;
+          color: $cmain;
+          font-size: 64px;
+          font-weight: 700;
+        }
+        .hero_subtitle{
+          margin-bottom: 50px;
+          font-size: 20px;
+          font-weight: 500;
+        }
+        .hero_buttons{
+          display: flex;
+          align-items: center;
+          gap: 50px;
+          @media #{$w1024}{
+            flex-direction: column;
+            gap: 20px;
+          }
+        }
+      }
+    }
+  }
+}

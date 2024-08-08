@@ -24,6 +24,17 @@
           }
         ?>
         <div class="section_wrap">
+          <div class="images">
+            <?php 
+              foreach($images as $img){
+                ?>
+                  <figure>
+                    <img src="<?php echo $img['image']['url'] ?>" alt="<?php echo $img['image']['alt'] ?>">
+                  </figure>
+                <?php
+              }
+            ?>
+          </div>
           <div class="points_list">
             <ul>
               <?php 
@@ -39,17 +50,6 @@
                 }
               ?>
             </ul>
-          </div>
-          <div class="images">
-            <?php 
-              foreach($images as $img){
-                ?>
-                  <figure>
-                    <img src="<?php echo $img['image']['url'] ?>" alt="<?php echo $img['image']['alt'] ?>">
-                  </figure>
-                <?php
-              }
-            ?>
           </div>
         </div>
       </div>

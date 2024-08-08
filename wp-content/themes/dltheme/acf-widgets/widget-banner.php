@@ -18,7 +18,7 @@
             }
           ?>
           <div class="theme_button">
-            <a href="<?php echo $section_button['url'] ?>"><?php echo $section_button['alt'] ?></a>
+            <a href="<?php echo $section_button['url'] ?>"><?php echo $section_button['title'] ?></a>
           </div>
         </div>
       </div>

@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<meta name="robots" content="noindex">
-	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.png">
+	<link rel="shortcut icon" href="<?php echo $header['favicon']['url'] ?>">
 	<!-- <script src="https://kit.fontawesome.com/990ba33bd4.js" crossorigin="anonymous"></script> -->
 	<?php wp_head(); ?>
 </head>
@@ -40,24 +40,26 @@
 
 <header class="trans-all-4">
 	<div class="container">
-		<div class="logo">
-			<a href="<?php echo home_url(); ?>">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="<?php wp_title() ?>">
-			</a>
-		</div>
-		<div class="header_menu">
-			<?php
-				wp_nav_menu([
-					'theme_location'	=> 'header_menu',
-					'menu'				=> 'header_menu', 
-					'container'			=> 'nav',
-					'container_class'	=> 'navigation',
-					'menu_class'		=> 'navigation'
-				]);
-			?>
-		</div>
+		<div class="header_elems">
+      <div class="logo">
+        <a href="<?php echo home_url(); ?>">
+          <img src="<?php echo $header['logo']['url'] ?>" alt="<?php wp_title() ?>">
+        </a>
+      </div>
+      <div class="header_menu">
+        <?php
+          wp_nav_menu([
+            'theme_location'	=> 'header_menu',
+            'menu'				=> 'header_menu', 
+            'container'			=> 'nav',
+            'container_class'	=> 'navigation',
+            'menu_class'		=> 'navigation'
+          ]);
+        ?>
+      </div>
+    </div>
     <div class="header_sign_in">
-      <div class="theme_button">
+      <div class="theme_button white small">
         <a href="<?php echo $header['header_button']['url'] ?>"><?php echo $header['header_button']['title'] ?></a>
       </div>
       <div class="icon">

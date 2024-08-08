@@ -1,0 +1,21 @@
+.dl_theme{
+  header{
+    padding: 50px 0;
+    margin-bottom: 50px;
+    .container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .header_elems{
+        display: flex;
+        align-items: center;
+        grid-gap: 164px;
+      }
+      .header_sign_in{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+      }
+    }
+  }
+}
