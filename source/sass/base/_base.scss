@@ -9,7 +9,11 @@ html:has(#wpadminbar){
     display: none;
   }
 }
-.dl_theme body{
+body{
+  margin: 0;
+  padding: 0;
+}
+ body .dl_theme{
 	color: $cbase;
 	font-size: 14px;
 	font-family: $ffbase, sans-serif;
@@ -101,8 +105,8 @@ html:has(#wpadminbar){
     }
     @media(max-width: 1024px){
       width: auto;
-      padding-left: 15px;
-      padding-right: 15px;
+      padding-left: 30px;
+      padding-right: 30px;
     }
   }
   // Container
@@ -127,7 +131,7 @@ html:has(#wpadminbar){
     bottom: 0;
     width: 100%;
     display: none;
-    z-index: 9999;
+    z-index: 1000;
     @media (max-width: 1024px) {
       display: block;
     }
@@ -158,6 +162,10 @@ html:has(#wpadminbar){
       color: $cwhite;
       font-size: 20px;
       font-weight: 500;
+      @media #{$w1024}{
+        padding: 10px 20px;
+        font-size: 14px;
+      }
       &:hover{
         background-color: darken($ccorp, 15);
       }
@@ -175,8 +183,18 @@ html:has(#wpadminbar){
     &.small{
       a,button{
         padding: 10px 25px;
+        @media #{$w1024}{
+          padding: 5px 15px;
+          font-size: 12px;
+        }
       }
     }
+  }
+  .section_buttons{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
   }
   //cusotm scrollbar 
   .custom_scrollbar{
@@ -203,10 +221,22 @@ html:has(#wpadminbar){
     font-size: 40px;
     font-weight: 500;
     color: $cmain;
+    @media #{$w1024}{
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
   }
   .section_subtitle{
     margin-bottom: 50px;
     font-size: 14px;
     font-weight: 500;
+    @media #{$w1024}{
+      margin-bottom: 20px;
+      font-size: 10px;
+    }
+  }
+  
+  .section_text{
+        
   }
 }

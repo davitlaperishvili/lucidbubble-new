@@ -1,3 +1,41 @@
 .dl_theme{
-  
+  section.text_block{
+    @extend .section_margin;
+    .section_wrap{
+      display: grid;
+      grid-gap: 100px;
+      align-items: center;
+      grid-template-columns: 1fr 1.2fr;
+      @media #{$w1024}{
+        grid-gap: 40px;
+        grid-template-columns: 1fr;
+      }
+      figure{
+        img{
+
+        }
+      }
+      .section_left{
+        .section_title{
+
+        }
+        .section_text{
+
+        }
+        .section_buttons{
+          margin-top: 50px;
+        }
+      }
+      &.reversed{
+        grid-template-columns: 1.2fr 1fr;
+        @media #{$w1024}{
+          grid-gap: 40px;
+          grid-template-columns: 1fr;
+        }
+        figure{
+          order: 2;
+        }
+      }
+    }
+  }
 }

@@ -7,7 +7,7 @@
       align-items: center;
       grid-template-columns: 1.2fr 1fr;
       @media #{$w1024}{
-        grid-gap: 40px;
+        grid-gap: 30px;
         grid-template-columns: 1fr;
       }
       figure{
@@ -21,24 +21,34 @@
           font-size: 16px;
           font-weight: 300;
           color: $cmain;
+          @media #{$w1024}{
+            font-size: 14px;
+          }
         }
         .page_title{
           margin-bottom: 20px;
           color: $cmain;
           font-size: 64px;
           font-weight: 700;
+          @media #{$w1024}{
+            margin-bottom: 10px;
+            font-size: 20px;
+          }
         }
         .hero_subtitle{
-          margin-bottom: 50px;
           font-size: 20px;
           font-weight: 500;
+          @media #{$w1024}{
+            font-size: 14px;
+          }
         }
         .hero_buttons{
+          margin-top: 50px;
           display: flex;
           align-items: center;
           gap: 50px;
           @media #{$w1024}{
-            flex-direction: column;
+            margin-top: 20px;
             gap: 20px;
           }
         }

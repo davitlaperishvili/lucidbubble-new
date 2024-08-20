@@ -1,0 +1,27 @@
+.dl_theme{
+  section.full_text{
+    @extend .section_margin;
+    .section_wrap{
+      h1.section_title{
+        margin-bottom: 20px;
+        color: $cmain;
+        font-size: 64px;
+        font-weight: 700;
+        @media #{$w1024}{
+          margin-bottom: 10px;
+          font-size: 16px;
+        }
+      }
+      figure{
+        margin-bottom: 50px;
+        @media #{$w1024}{
+          margin-bottom: 25px;
+        }
+        img{
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

@@ -4,7 +4,7 @@
         $section_text = get_sub_field('section_text'); 
         $section_image = get_sub_field('section_image'); 
         $image_first = get_sub_field('image_first') ? "reversed" : "";
-        $hero_buttons = get_sub_field('hero_buttons'); 
+        $section_buttons = get_sub_field('section_buttons'); 
         $rowIndex = get_row_index();
     ?>
     
@@ -19,11 +19,12 @@
               <div class="section_text"><?php echo $section_text ?></div>
               <div class="section_buttons">
                 <?php 
-                  foreach($hero_buttons as $btn){
+                  foreach($section_buttons as $btn){
                     $btn_color = $btn['color'] == "fill" ? "": "white";
+                    $open_popup = $btn['open_popup'] ? "show_popup" : "";
                     ?>
                       <div class="theme_button <?php echo $btn_color ?>">
-                          <a href="<?php echo $btn['button']['url'] ?>"><?php echo $btn['button']['title'] ?></a>
+                          <a href="<?php echo $btn['button']['url'] ?>" class="<?php echo $open_popup ?>"><?php echo $btn['button']['title'] ?></a>
                       </div>
                     <?php
                   }

@@ -1,3 +1,74 @@
 .dl_theme{
-  
+  section.reviews{
+    @extend .section_margin;
+    .reviews_wrap{
+      .review_item{
+        padding: 40px;
+        border: 1px solid rgba($cblack, 0.3);
+        border-radius: 10px;
+        @media #{$w1024}{
+          padding: 30px 20px;
+        }
+        .review_top{
+          display: flex;
+          align-items: center;
+          gap: 17px;
+          margin-bottom: 25px;
+          @media #{$w1024}{
+            gap: 15px;
+            margin-bottom: 10px;
+          }
+          figure{
+            img{
+              width: 60px;
+              height: 60px;
+              border-radius: 50%;
+            }
+          }
+          .author_name{
+            font-size: 14px;
+            color: $cmain;
+            font-weight: 600;
+          }
+        }
+        .testimonial_stars{
+          margin-bottom: 10px;
+        }
+        .review_text{
+          font-size: 14px;
+          font-weight: 500;
+          @media #{$w1024}{
+            font-size: 12px;
+          }
+        }
+      }
+      .reviews_swiper_arrows{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: space-between;
+        width: calc(100% + 100px);
+        left: -50px;
+        z-index: 10;
+        @media #{$w1024}{
+          width: calc(100% + 50px);
+          left: -25px;
+        }
+        .swiper-button-next,
+        .swiper-button-prev{
+          right: unset;
+          left: unset;
+          &:after{
+            color: $cbase;
+            font-weight: 600;
+            font-size: 28px;
+            @media #{$w1024}{
+             font-size: 20px; 
+            }
+          }
+        }
+      }
+    }
+  }
 }

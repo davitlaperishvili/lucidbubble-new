@@ -5,14 +5,14 @@
     .section_wrap{
       .images{
         display: grid;
-        grid-gap: 80px;
+        grid-gap: 20px;
         grid-template-columns: repeat(2, 1fr);
         @media #{$w1024}{
-          grid-gap: 20px;
+          grid-gap: 5px;
         }
         figure{
           width: 100%;
-          height: 483px;
+          height: max-content;
           @media #{$w1024}{
             height: 120px;
           }

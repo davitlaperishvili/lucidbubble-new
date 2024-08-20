@@ -1,0 +1,15 @@
+section.no_found{
+  @extend .section_margin;
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section_title{
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .section_subtitle{
+    font-size: 30px;
+  }
+}

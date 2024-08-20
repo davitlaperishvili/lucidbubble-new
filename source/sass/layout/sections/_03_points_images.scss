@@ -51,11 +51,13 @@
         @media #{$w1024}{
           flex-direction: row;
           flex-wrap: wrap;
+          gap: 10px;
         }
         figure{
-          flex: auto;
+          // flex: auto;
           @media #{$w1024}{
-            width: calc(50% - 10px);
+            width: calc(50% - 5px);
+            height: 110px;
           }
           img{
             width: 100%;

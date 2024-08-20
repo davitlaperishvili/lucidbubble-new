@@ -3,6 +3,7 @@
         $section_title = get_sub_field('section_title'); 
         $section_subtitle = get_sub_field('section_subtitle'); 
         $section_button = get_sub_field('section_button');
+        $open_popup = get_sub_field('open_popup') ? "show_popup" : "";
         $rowIndex = get_row_index();
     ?>
     
@@ -18,7 +19,7 @@
             }
           ?>
           <div class="theme_button">
-            <a href="<?php echo $section_button['url'] ?>"><?php echo $section_button['title'] ?></a>
+            <a href="<?php echo $section_button['url'] ?>" class="<?php echo $open_popup ?>"><?php echo $section_button['title'] ?></a>
           </div>
         </div>
       </div>

@@ -16,7 +16,8 @@ $dl_includes = array(
 	'/widgets.php',
 	'/enqueue.php',
 	'/menus.php',
-	'/options-page.php'
+	'/options-page.php',
+	'/lang.php'
 );
 
 // Include files

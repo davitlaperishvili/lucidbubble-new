@@ -19,9 +19,10 @@
               <?php 
                 foreach($hero_buttons as $btn){
                   $btn_color = $btn['color'] == "fill" ? "": "white";
+                  $open_popup = $btn['open_popup'] ? "show_popup" : "";
                   ?>
                     <div class="theme_button <?php echo $btn_color ?>">
-                        <a href="<?php echo $btn['button']['url'] ?>"><?php echo $btn['button']['title'] ?></a>
+                        <a href="<?php echo $btn['button']['url'] ?>" class="<?php echo $open_popup ?>"><?php echo $btn['button']['title'] ?></a>
                     </div>
                   <?php
                 }
@@ -34,4 +35,4 @@
         </div>
       </div>
     </section>
-
+                

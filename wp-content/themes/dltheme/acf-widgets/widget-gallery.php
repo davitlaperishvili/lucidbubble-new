@@ -23,12 +23,14 @@
           }
         ?>
         <div class="section_wrap">
-          <div class="images">
+          <div class="images magnific">
             <?php 
               foreach($images as $img){
                 ?>
-                  <figure>
-                    <img src="<?php echo $img['image']['url'] ?>" alt="<?php echo $img['image']['alt'] ?>">
+                  <figure class="">
+                    <a href="<?php echo $img['image']['url'] ?>">
+                      <img src="<?php echo $img['image']['url'] ?>" alt="<?php echo $img['image']['alt'] ?>">
+                    </a>
                   </figure>
                 <?php
               }

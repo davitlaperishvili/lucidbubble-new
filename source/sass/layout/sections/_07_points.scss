@@ -1,3 +1,44 @@
 .dl_theme{
-  
+  section.points{
+    @extend .section_margin;
+    .points_list{
+      ul{
+        @extend .no-list;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        @media #{$w1024}{
+          grid-template-columns: 1fr;
+        }
+        li{
+          .point_item{
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            border: 6px solid $ccorpLight;
+            border-radius: 10px;
+            @media #{$w1024}{
+              padding: 20px;
+            }
+            .point_title{
+              margin-bottom: 25px;
+              font-size: 20px;
+              font-weight: 500;
+              color: $cmain;
+              @media #{$w1024}{
+                margin-bottom: 20px;
+                font-size: 14px;
+              }
+            }
+            .point_desc{
+              font-size: 500;
+              @media #{$w1024}{
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -35,7 +35,7 @@ export default function hamburderMenu() {
   $("div.resp_menu div.resp_menu_ul").html(clone);
   // Responsive menu
   $("div.resp_menu > div.resp_menu_toggle").on("click", function () {
-    var resp_menu = $(this).next("div.resp_menu_ul");
+    var resp_menu = $(this).next("div.resp_menu_ul_wrap");
     if (!resp_menu.hasClass("is-active")) {
       $(this).addClass("resp_menu_toggled");
       //resp_menu.fadeIn(500);
@@ -45,6 +45,10 @@ export default function hamburderMenu() {
       //resp_menu.fadeOut(500);
       resp_menu.removeClass("is-active");
     }
+  });
+  $("div.resp_menu .close_menu").on("click", function () {
+    $(".resp_menu > .resp_menu_toggle").removeClass("resp_menu_toggled");
+    $(".resp_menu > .resp_menu_ul_wrap").removeClass("is-active");
   });
   $("div.resp_menu ul li")
     .has("ul")

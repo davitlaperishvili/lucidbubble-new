@@ -66,6 +66,10 @@
             ?>
             </div>
           </div>
+          <div class="reviews_swiper_arrows" dir="rtl">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
         </div>
       </div>
     </section>
