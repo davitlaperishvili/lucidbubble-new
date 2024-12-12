@@ -23,11 +23,11 @@
             display: flex;
             flex-direction: column;
             height: 100%;
-            padding: 25px 105px 25px 25px;
+            padding: 25px 65px 25px 25px;
             border: 6px solid $ccorpLight;
             border-radius: 10px;
             @media #{$w1024}{
-              padding: 15px 80px 15px 15px;
+              padding: 15px 50px 15px 15px;
             }
             figure{
               position: absolute;

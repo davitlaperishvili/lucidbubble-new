@@ -31,13 +31,13 @@
                 color: $cmain;
                 @media #{$w1024}{
                   margin-bottom: 20px;
-                  font-size: 14px;
+                  font-size: 20px;
                 }
               }
               .point_desc{
                 font-size: 500;
                 @media #{$w1024}{
-                  font-size: 12px;
+                  font-size: 16px;
                 }
               }
             }
